@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+}
+
+.header-title{
+    margin-left: 50px;
+}
+
+.dark-mode{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+
+
+input{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+select{
+    margin-top: 50px;
+   
+}
+
+.selections-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+main{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 264px);
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.card-container{
+    width: 264px;
+    height: 370px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);;
+}
+
+.card-title{
+    color: black;
+    margin-left: 25px;
+}
+
+.card-info-title{
+    color: black;
+    margin-left: 25px;
+}
+
+.card-info-description{
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.population{
+    color: black;
+}
+
+.flag{
+    width: 264px;
+    height: 160px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+}
+
+li{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.country-main{
+    display: flex;
+}
+
+.info-row{
+    display: flex;
+    align-items: center;
+}
+
+.country-flag{
+    width: 560px;
+}
+
+.country-info-container{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.info-column-2, .info-column-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+.info-title{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.info-description{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        grid-template-columns: repeat(2,264px);
+    }
+
+    .country-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .country-info-container{
+        flex-direction: column;
+        gap:0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    main{
+        grid-template-columns: 264px;}
+}
+
+
